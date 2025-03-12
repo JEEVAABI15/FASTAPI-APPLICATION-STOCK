@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/JEEVAABI15/FASTAPI-APPLICATION-STOCK'
+                git branch: 'main',
+                    url: 'https://github.com/JEEVAABI15/FASTAPI-APPLICATION-STOCK'
             }
         }
 
